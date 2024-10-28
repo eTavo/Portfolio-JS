@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Emmanuel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILL</a></li>
+                    <li><a href="#proyecto" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/FotoPersonal.png" alt="">
+            </div>
+            <h1>EMMANUEL TAVOLARO</h1>
+            <H2 style="color: #1CB698;">Python Developer - Ciencia de Datos</H2>
+            <div class="redes">
+                <a href="https://www.instagram.com/emma18_ok/"><i class="fa-brands fa-instagram" style="color: rgb(199, 30, 0);;"></i></a>
+                <a href="https://www.linkedin.com/in/emmanuel-tavolaro"><i class="fa-brands fa-linkedin-in" style="color: rgb(83, 112, 243);"></i></a>
+                <a href="https://github.com/eTavo"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, me llamo Emmanuel Tavolaro,</span> soy desarrollador en Python, centrado en el area de la Ciencia de Datos, en la Extraccion Transformacion y carga de Datos, interesado por especializarme en un lenguaje de programacion versatil al cual tambien le he agregado experiencia usando Framework como Django para la creacion de un portfolio personal, el cual se encuentra en desarrollo actualmente.
+                Me apasionan las tecnologias las cuales intento ir nutriendome de nuevos conocimientos y conceptos para luego trasladarlo en mi area profesional.
+            </p><br><br>
+
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Pais / Ciudad</strong>
+                            Argentina / Buenos Aires
+                        </li>
+                        <li>
+                            <strong>Correo Electronico</strong>
+                            emmanueltavolaro@gmail.com
+                        </li>
+                        <li>
+                            <strong>Linkedin</strong>
+                            <a href="https://www.linkedin.com/in/emmanuel-tavolaro" style="color: #a5e2fa;">www.linkedin.com/in/emmanuel-tavolaro</a>
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/eTavo" style="color: #a5e2fa;">github.com/eTavo</a>  
+                        </li>
+                    </ul>
+                </div>
+
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses" style="color: #1CB698;">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>MASCOTA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>PC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-python"></i>
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>ESTUDIAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><br><br><br><br>
+
+            <div class="filas">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Tecnicatura Superior en Programacion Orientada a Objetos</h4>
+                        <span class="casa">Universidad Tecnologica Nacional</span>
+                        <span class="fecha">2021 - Actualidad</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Python for Data Science</h4>
+                        <span class="casa">IBM</span>
+                        <span class="fecha">Certificado en 2023</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <button>
+                <a href="CV Emmanuel Tavolaro.pdf" style="color: #fff;">Descargar CV</a>
+                 <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--SECCION SKILL-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2><br><br>
+            <div class="fila">
+                <!--Hard Skill-->
+                <div class="col">
+                    <h3 style="color: #1CB698;">Hard Skills</h3>
+                    <div class="skill">
+                        <span>- Python</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Javascript</span>
+                    </div>
+                    <div class="skill">
+                        <span>- HTML</span>
+                    </div>
+                    <div class="skill">
+                        <span>- CSS</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Django</span>
+                    </div>
+                    <div class="skill">
+                        <span>- MongoDB</span>
+                    </div>
+                    <div class="skill">
+                        <span>- SQL</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Jira</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Batch</span>
+                    </div>
+                    <div class="skill">
+                        <span>- GitHub</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Git</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Bash</span>
+                    </div>
+                </div>
+                <!--Soft Skill-->
+                <div class="col">
+                    <h3 style="color: #1CB698;">Soft Skills</h3>
+                    <div class="skill">
+                        <span>- Escucha Activa</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Trabajo en Equipo</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Proactivo</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Autodidacta</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Responsable</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Comunicacion</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Creativo</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Atencion al CLiente</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Resolucion de Porblemas</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Dedicacion</span>
+                    </div>
+                    <div class="skill">
+                        <span>- Compromiso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PROYECTOS-->
+    <section id="proyecto" class="proyecto">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2><br><br>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>integración con SQL Server</h4>
+                        <p>Realizar la extracción de las tablas de las bases de datos del cliente, en ocasiones con la autenticación de Windows y otras con credenciales de
+                            usuario y contraseña con permiso de lectura, parseando campos fechas, dependiendo la luz horaria del cliente, y generando en ocasiones CSV
+                            o Parquet con las librerías Pyarrow.Parquet, Pandas junto a los controladores necesarios para la instancia de SQLServer, para luego
+                            subir los archivos a los contenedores de Visionaris. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Integración con Jira</h4>
+                        <p>En este caso se tuvo que realizar la extracción de los datos de los issues registrados en el portal de Jira para poder tener los datos con los campos
+                            de asignación de usuario, quien lo genero, estado del mismo y para poder extraer el tiempo de trabajo, hubo que apuntarle a Tempo que se encuentra
+                            separado de Jira, teniendo en cuenta que no se crucen los datos de las incidencias. A su vez se tuvo que realizar un dataframe de los datos para 
+                            descargarlos en formato parquet para luego integrarlos a Visionaris dentro de sus contenedores.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Migraciones entre distintos SO</h4>
+                        <p>Cuando un cliente cambia de servidor y al mismo tiempo de sistema operativo, pasándose de Windows Server a Linux o viceversa, se realiza un backup de 
+                            mongodb para luego levantarlo en el nuevo servidor generando una nueva licencia del producto para que se mantenga la información al día. 
+                            En estos casos se usa la consola de comandos Bash y CMD.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Integración con clientes Dividens</h4>
+                        <p>En esta oportunidad al tratarse de una Api, a través de las librerías de HttpClient, Resquests, Json y Pandas se realizo la conexión a la api 
+                            teniendo en cuenta las distintas Apis para la extracción de diferentes datos, generando los dataframe y volcándolos en CSV.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Integración con plataforma Vtex</h4>
+                        <p>Para el caso de Vtex la plataforma cuanta con un sistema de token para las consultas a las diferentes Apis, caso similar al de Dividenz contando con 
+                            librerías como HttpClient, Requests, Pandas y Json hubo que realizar la extracción, limpieza y transformación de datos ya que se encuentran en formato 
+                            Json anidados para poder luego generar los dataframe para volcar la información que el cliente requería poder visualizar dentro de Visionaris.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Mejoras en la performance del Servicio</h4>
+                        <p>Al registrar diferentes reportes de clientes donde se veía afectada la performance del servicio que se brinda, decidí realizar un script en Batch en 
+                            el cual se bajaban los motores de la app, se realizaba la limpieza de las carpetas temporales y se volvía a subir el servicio, con el cual soluciono 
+                            un 80% del inconveniente en la mayoría de los clientes y manteniéndole la performance del servidor liberando espacio en el disco del servidor.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Tú Nomrbe">
+                        <input type="text" placeholder="Numero Telefónico">
+                        <input type="text" placeholder="Direccion de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Chivilcoy, Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: emmanueltavolaro@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/emma18_ok/"><i class="fa-brands fa-instagram" style="color: rgb(199, 30, 0);;"></i></a>
+            <a href="https://www.linkedin.com/in/emmanuel-tavolaro"><i class="fa-brands fa-linkedin-in" style="color: rgb(83, 112, 243);"></i></a>
+            <a href="https://github.com/eTavo"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
