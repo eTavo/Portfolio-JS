@@ -12,7 +12,7 @@ www.linkedin.com/in/emmanuel-tavolaro
 https://www.instagram.com/emma18_ok/
 
 ## Ver ejemplo en vivo
-- [https://etavo.github.io/Portfolio-JS/] (https://etavo.github.io/Portfolio-JS/)
+https://etavo.github.io/Portfolio-JS/
 
 ## Instalacion
 Este es un proyecto web el cual no necesita instalación. Simplemente abre la carpeta o haz doble click en el .html
